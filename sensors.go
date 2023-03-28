@@ -16,6 +16,7 @@ var (
 	humidity         int32
 )
 
+// startSensors initializes the sensors.
 func startSensors() {
 	machine.I2C0.Configure(machine.I2CConfig{})
 
@@ -24,6 +25,7 @@ func startSensors() {
 
 }
 
+// readSensors reads the sensors.
 func readSensors() {
 	temperature, _ = co2Sensor.ReadTemperature()
 	co2SensorReading, _ = co2Sensor.ReadCO2()
