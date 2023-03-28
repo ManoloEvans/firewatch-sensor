@@ -37,10 +37,16 @@ func main() {
 
 	for {
 		co2, err := sensor.ReadCO2()
+		humidity, err := sensor.ReadHumidity()
+		temperature, err := sensor.ReadTemperature()
+		temperature = temperature / 1000
+
 		if err != nil {
 			println(err)
 		}
-		println("CO2", co2)
+		println("Temperature", temperature, "°C")
+		println("Humidity", humidity, "%")
+		println("CO2", co2, "ppm")
 		time.Sleep(time.Second)
 	}
 }
