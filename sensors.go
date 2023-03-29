@@ -23,6 +23,9 @@ func startSensors() {
 	co2Sensor = scd4x.New(machine.I2C0)
 	co2Sensor.Configure()
 
+	if err := co2Sensor.StartPeriodicMeasurement(); err != nil {
+		println(err)
+	}
 }
 
 // readSensors reads the sensors.
