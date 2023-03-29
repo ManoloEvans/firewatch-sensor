@@ -17,10 +17,10 @@ const (
 )
 
 var (
-	radio   lora.Radio
+	radio lora.Radio
 
 	session *lorawan.Session = &lorawan.Session{}
-	otaa    *lorawan.Otaa = &lorawan.Otaa{}
+	otaa    *lorawan.Otaa    = &lorawan.Otaa{}
 
 	encoder cayennelpp.Encoder = cayennelpp.NewEncoder()
 )
@@ -72,6 +72,8 @@ func createPayload() ([]byte, error) {
 	payload := encoder.Bytes()
 	println(hex.EncodeToString(payload))
 	return payload, nil
+
+}
 
 var (
 	appEUI string
