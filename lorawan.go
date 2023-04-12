@@ -55,7 +55,7 @@ func createPayload() ([]byte, error) {
 	encoder.Reset()
 
 	// SCD40 Humidity
-	encoder.AddRelativeHumidity(1, float64(humidity)/1000)
+	encoder.AddRelativeHumidity(1, float64(humidity))
 
 	// SCD40 Temperature
 	encoder.AddTemperature(2, float64(temperature)/1000)
