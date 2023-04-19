@@ -47,6 +47,12 @@ The following software tools are required to build the sensor module:
 | GND        | GND              |
 | 3v3        | VCC              |
 
+## Sensor Module
+
+This is what it looks like:
+
+![Sensor](images/sensor.png)
+
 ## Setup
 
 Follow these steps to setup the environment:
