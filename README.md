@@ -1,6 +1,17 @@
 # firewatch-sensor
 This repository contains the code for a firewatch module(all components of a sensor put together). The code initializes the co2 sensor, which can also measure humidity and temperature, starts and secures a lorawan connection to the things network, and creates and sends a payload to the things network. The code is in tinygo, which I have had no previous experience in until I started this project.
 
+## Table of Contents
+
+- [Aim of the Project](#aim-of-the-project)
+- [Hardware Requirements](#hardware-requirements)
+- [Software Requirements](#software-requirements)
+- [Wiring the Sensor Module](#wiring-the-sensor-module)
+- [Sensor Module](#sensor-module)
+- [Setup](#setup)
+- [Usage](#usage)
+
+
 ## Aim of the Project
 The goal of this project is to create a prototype for what would be a cluster of sensors in remote areas to detect wildfires. Nowadays there are ever increasing wildfire occurring throughout the world causing billions of dollars in damages. Hopefully this project will be able to notify respective authorities of wildfires and save resources. 
 
