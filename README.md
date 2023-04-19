@@ -51,7 +51,7 @@ The following software tools are required to build the sensor module:
 
 This is what it looks like:
 
-![Sensor](images/sensor.png)
+![Sensor](images/sensor.PNG)
 
 ## Setup
 
